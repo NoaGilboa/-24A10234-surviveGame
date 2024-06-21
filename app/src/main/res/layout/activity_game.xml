@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/game_LAY_center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#ffff00"
+        android:visibility="invisible"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/game_BTN_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/game_LAY_center"
+        android:layout_toStartOf="@+id/game_LAY_center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_left"
+        android:contentDescription="@string/move_left"/>
+
+
+    <ImageButton
+        android:id="@+id/game_BTN_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/game_LAY_center"
+        android:layout_toEndOf="@+id/game_LAY_center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_right"
+        android:contentDescription="@string/move_right"/>
+
+
+    <ImageButton
+        android:id="@+id/game_BTN_up"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/game_LAY_center"
+        android:layout_alignStart="@+id/game_LAY_center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_up"
+        android:contentDescription="@string/move_up"/>
+
+
+    <ImageButton
+        android:id="@+id/game_BTN_down"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/game_LAY_center"
+        android:layout_alignStart="@+id/game_LAY_center"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_down"
+        android:contentDescription="@string/move_down"/>
+
+</RelativeLayout>
